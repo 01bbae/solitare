@@ -54,19 +54,18 @@ class DeckofCards{
     }
 
     shuffle(){
-        // for(let i=0; i<100; ++i){
-        //     let shift = Math.floor(Math.random()*52+1);
-        //     console.log(shift);
-        //     let shiftCard = this.deck[shift];
-        //     let removed = this.deck.splice(-2, shift+2);
-        //     this.deck.concat(removed)
-            
-        // }
-
-        while(notshuffled){
-            Math.floor(Math.random()*52)
-            
+        for(let i=0; i<100; ++i){
+            var lengthofunshuffled = this.deck.length;
+            while(lengthofunshuffled > 1){
+                let temp = Math.floor(Math.random()*lengthofunshuffled)
+                let tempobj = this.deck[temp];
+                
+                this.deck[temp] = this.deck.pop();
+                this.deck.push(tempobj);
+                lengthofunshuffled--;
+            }
         }
+        return this.deck;
     }
 
 }

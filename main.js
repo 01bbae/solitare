@@ -1,13 +1,15 @@
-import DeckofCards from './deck.js'
+import table from './table.js'
+
 
 var cardDeck = new DeckofCards();
 
 console.log(cardDeck.Deck);
 
 // console.log(cardDeck.Deck.length);
-console.log(cardDeck.shuffle);
-console.log('//////////////////////////////////////////' + '\n')
+console.log('\n' +'//////////////////////////////////////////' + '\n')
+console.log(cardDeck.shuffle());
+
+
+console.log('\n' +'//////////////////////////////////////////' + '\n')
 
 console.log(cardDeck.Deck);
-
-
