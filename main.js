@@ -1,15 +1,9 @@
-import table from './table.js'
+//import Table from './table.js'
 
 
-var cardDeck = new DeckofCards();
+// var newTable = new Table();
 
-console.log(cardDeck.Deck);
-
-// console.log(cardDeck.Deck.length);
-console.log('\n' +'//////////////////////////////////////////' + '\n')
-console.log(cardDeck.shuffle());
-
-
-console.log('\n' +'//////////////////////////////////////////' + '\n')
-
-console.log(cardDeck.Deck);
+var canvas = document.getElementById("gamecanvas");
+var ctx = canvas.getContext("2d");
+ctx.fillStyle = "#FF0000";
+ctx.fillRect(1000, 0, 150, 75);

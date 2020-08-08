@@ -9,7 +9,7 @@ class Table{
 
 
         var stacks = [[],[[],[],[],[],[],[],[]]]
-        var pile = new Array(2);
+        var pile = [[], []]
 
 
         // stack = [
@@ -33,13 +33,17 @@ class Table{
                 stacks[1][i].push(cardDeck.Deck.pop());
             }
         }
-        console.log(stacks);
+        // console.log(stacks);
+        // console.log(cardDeck.Deck);
+        while(cardDeck.Deck.length > 0){
+            pile[0].push(cardDeck.Deck.pop());  //this operation reverses the deck (not harmful but keep in mind)
+        }
 
+        //console.log(pile);
     }
+
+
 }
-
-
-var newTable = new Table();
 
 
 
