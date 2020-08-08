@@ -17,6 +17,22 @@ class Card {
         return this.symbol;
     }
 
+    get Face(){
+        let face;
+        if(this.value == 1){
+            return 'ace';
+        }else if(this.value == 11){
+            return 'jack';
+        }else if(this.value == 12){
+            return 'queen';
+        }else if(this.value == 13){
+            return 'king';
+        }else{
+            return this.value;
+        }
+    }
+    
+
     set Value(value){
         this.value = value;
     }

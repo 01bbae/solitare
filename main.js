@@ -1,6 +1,13 @@
-import Card from './card.js';
+import DeckofCards from './deck.js'
+
+var cardDeck = new DeckofCards();
+
+console.log(cardDeck.Deck);
+
+// console.log(cardDeck.Deck.length);
+console.log(cardDeck.shuffle);
+console.log('//////////////////////////////////////////' + '\n')
+
+console.log(cardDeck.Deck);
 
 
-
-let newCard = new Card(1,"red","heart");
-console.log(newCard.Color);
