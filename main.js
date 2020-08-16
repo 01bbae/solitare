@@ -2,8 +2,21 @@
 
 
 // var newTable = new Table();
+window.onload = function(){
 
-var canvas = document.getElementById("gamecanvas");
-var ctx = canvas.getContext("2d");
-ctx.fillStyle = "#FF0000";
-ctx.fillRect(1000, 0, 150, 75);
+}
+var canvas = document.getElementById('gamecanvas');
+var ctx = canvas.getContext('2d');
+ctx.fillStyle = "#FFFFFF";
+
+function loadAndDrawImage(){
+    var img = new Image();
+    image.onload = function()
+        {
+            ctx.drawImage(img);
+        }
+
+    img.src = './assets/hearts-1.png';
+}
+
+loadAndDrawImage();
